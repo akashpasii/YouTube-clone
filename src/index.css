@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+.navbar-item {
+    @apply p-2 pr-4 rounded-[20px] bg-neutral-800;
+}
+
+.cu-item {
+    @apply cursor-pointer;
+}
+
+.sidebar-border {
+    @apply border-b border-b-gray-600;
+}
+
+.hoversidebar-item {
+    @apply flex justify-start items-center p-2.5 gap-4 hover:bg-neutral-800 rounded-[10px] cursor-pointer;
+}
+
+.scrollbar-container {
+    scrollbar-width: none;
+}
+
+.scrollbar-container:hover {
+    scrollbar-width: thin;
+    scrollbar-color: #222 #151515;
+}
+
+/* Base panel style */
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+
+  /* Start hidden off-screen */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* When visible */
+.side-panel.show {
+  transform: translateX(0);
+}
+
+/* When hidden */
+.side-panel.hide {
+  transform: translateX(-100%);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-column-gap: 16px;
+  row-gap: 30px;
+  margin-top: 15px;
+}
+
+.b-container {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.b-container:hover {
+  background-color: rgb(33, 66, 94); /* same background */
+  box-shadow: outset 0 0 0 10px rgb(33, 66, 94); 
+}
