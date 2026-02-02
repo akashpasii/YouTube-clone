@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
 class Home extends Component {
@@ -23,8 +23,8 @@ class Home extends Component {
   render() {
     const { showSidebar, showmoreExplore, mainItems } = this.state;
     return (
-      <div className="h-20vw w-full bg-[#151515] text-white">
-        <Header toggleSidebar={this.toggleSidebar} />
+      <div className="w-full bg-[#151515] text-white">
+        <Navbar toggleSidebar={this.toggleSidebar} />
         <div className="flex flex-1 relative">
           <Sidebar
             visible={showSidebar}

@@ -70,6 +70,12 @@
   margin-top: 15px;
 }
 
+@media (min-width: 1440px) {
+  .feed {
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  }
+}
+
 .b-container {
   width: 100px;
   height: 100px;
