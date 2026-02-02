@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
-class Home extends Component {
+class Header extends Component {
   state = {
     showSidebar: false,
     showmoreExplore: false,
@@ -38,4 +38,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Header;

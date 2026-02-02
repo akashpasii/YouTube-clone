@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Main from "../components/Main";
 
-class HomeMain extends Component {
+class MainPage extends Component {
   state = {
     mainItems: "All",
   };
@@ -18,4 +18,4 @@ class HomeMain extends Component {
   }
 }
 
-export default HomeMain;
+export default MainPage;

@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home.jsx";
+import Header from "./pages/Header.jsx";
 import Login from "./pages/Login.jsx";
 import "./App.css";
-import HomeMain from "./pages/HomeMain.jsx";
+import MainPage from "./pages/MainPage.jsx";
 import VideoPage from "./pages/VideoPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 
@@ -10,10 +10,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<><Home /><HomeMain /></>}
+        <Route path="/" element={<><Header /><MainPage /></>}
         />
         <Route path="/login" element={<Login />} />
-        <Route path="/videoPage" element={<><Home/><VideoPage /></>} />
+        <Route path="/videoPage" element={<><Header/><VideoPage /></>} />
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>
